@@ -1,0 +1,72 @@
+.plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  //gap: 20px;
+  box-shadow: 0 0 8px #efeff2;
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding: 10px;
+  width: 350px;
+  height: 400px;
+
+  .current-target {
+    top: -10px;
+    right: 40px;
+    font-weight: bold;
+    position: absolute;
+    font-size: 13px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #3fdacb;
+    box-shadow: 0 0 8px #efeff2;
+  }
+
+  .base-info {
+    padding: 10px;
+    height: 150px;
+    margin-bottom: 20px;
+    .name {
+      font-weight: bold;
+    }
+    .price {
+      margin-bottom: 10px;
+
+      .not-discount {
+        color: gray;
+        text-decoration: line-through;
+      }
+    }
+    .description {
+      color: gray;
+    }
+  }
+
+  .button-container {
+    text-align: center;
+    .v-btn {
+      color: white;
+      background-color: #763fda;
+    }
+  }
+
+  .includes {
+    &-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .includes-item {
+      display: flex;
+      gap: 10px;
+      font-size: 16px;
+
+      .mdi-emoticon-cool-outline {
+        color: green;
+      }
+      .mdi-emoticon-angry-outline {
+        color: gray;
+      }
+    }
+  }
+}

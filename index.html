@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIZZYCHAT</title>
+    <style>
+        #app {
+            min-height: calc(100svh - 70px);
+            width: 100%;
+            position: fixed;
+            overflow-x: hidden;
+            overflow-y: auto;
+            top: 0;
+            bottom: 0;
+            overflow-wrap: break-word;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: url('@/assets/fonts/Roboto-Regular.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            src: url('@/assets/fonts/Roboto-Medium.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: url('@/assets/fonts/Roboto-Bold.woff2') format('woff2');
+        }
+    </style>
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="src/main.js" defer></script>
+</body>
+</html>

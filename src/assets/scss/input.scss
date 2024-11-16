@@ -1,0 +1,57 @@
+.events-disabled {
+  pointer-events: none;
+}
+
+.v-input {
+  .v-field {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    label {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+table {
+  tr:hover {
+    .actions-container {
+      .mdi {
+        display: block;
+      }
+    }
+  }
+
+  .actions {
+    width: 100px;
+  }
+
+  .actions-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+
+    .mdi {
+      display: none;
+      cursor: pointer;
+
+      &:hover {
+        /* color: violet; */
+      }
+    }
+  }
+}
+
+.required {
+  label::after {
+    content: "*";
+    color: red;
+  }
+}
+
+.v-input__details {
+  padding-bottom: 6px;
+  padding-inline: 8px !important;
+}
